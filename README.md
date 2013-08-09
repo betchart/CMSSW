@@ -1,4 +1,4 @@
-Based on [TopMCRequestInstructions](https://twiki.cern.ch/twiki/bin/viewauth/CMS/TopMCRequestInstructions)
+Based on [TopMCRequestInstructions](https://twiki.cern.ch/twiki/bin/viewauth/CMS/TopMCRequestInstructions#8_TeV_Summer12_Campaign) for Summer12
 
 ## Setup
 
