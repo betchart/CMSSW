@@ -15,7 +15,7 @@ cmsDriver.py Configuration/GenProduction/python/EightTeV/POWHEG_PYTHIA6_top_tauo
 cmsRun POWHEG_PYTHIA6_top_tauola_SemileptonicNonGG_cff_GEN.py
 ```
 
-## step 1
+## Step 1
 
 ```bash
 cmsDriver.py Configuration/GenProduction/python/EightTeV/POWHEG_PYTHIA6_top_tauola_SemileptonicNonGG_cff.py -s GEN,SIM --filein=lhe:5882 --conditions START52_V9::All --beamspot Realistic8TeVCollision --pileup NoPileUp --datatier GEN-SIM --eventcontent RAWSIM -n 10 --no_exec
