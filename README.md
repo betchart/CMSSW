@@ -1,3 +1,5 @@
+Based on [TopMCRequestInstructions](https://twiki.cern.ch/twiki/bin/viewauth/CMS/TopMCRequestInstructions)
+
 ## Setup
 
 ```bash
