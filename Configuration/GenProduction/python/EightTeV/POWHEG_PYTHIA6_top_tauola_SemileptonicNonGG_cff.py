@@ -35,7 +35,7 @@ generator = cms.EDFilter(
 
 configurationMetadata = cms.untracked.PSet(
     version = cms.untracked.string('$Revision: 1.1 $'),
-    name = cms.untracked.string('$Source: /local/reps/CMSSW/CMSSW/Configuration/GenProduction/python/EightTeV/POWHEG_PYTHIA6_top_tauola_mttfilter_1000toInf_cff.py,v $'),
+    name = cms.untracked.string('$Source: /local/reps/CMSSW/CMSSW/Configuration/GenProduction/python/EightTeV/POWHEG_PYTHIA6_top_tauola_SemileptonicNonGG_cff.py,v $'),
     annotation = cms.untracked.string('POWHEG + PYTHIA6 Tune Z2star + Tauola at 7TeV')
     )
 
@@ -47,8 +47,8 @@ ggInitialStateFilter = cms.EDFilter("MCPdgIndexFilter",
 
 requireLeptonFilter = cms.EDFilter("MCSingleParticleFilter",
     ParticleID = cms.untracked.vint32(11,13,15,-11,-13,-15),
-    MinPt = cms.untracked.vdouble(15,15,15,15,15,15),
-    Status = cms.untracked.vint32(3,3,3,3,3,3)
+    MinPt = cms.untracked.vdouble(6*[15]),
+    Status = cms.untracked.vint32(6*[3])
 )
 
 ProductionFilterSequence = cms.Sequence(generator * ~ggInitialStateFilter * requireLeptonFilter )
