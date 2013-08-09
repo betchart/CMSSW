@@ -1,6 +1,6 @@
 ## Setup
 
-bash```
+```bash
 cmsrel CMSSW_5_3_7
 cd CMSSW_5_3_7/src/
 cmsenv
