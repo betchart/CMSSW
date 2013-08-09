@@ -1,10 +1,14 @@
 ## Setup
 
 ```bash
+git clone https://github.com/betchart/CMSSW.git
 cmsrel CMSSW_5_3_7
-cd CMSSW_5_3_7/src/
+rmdir CMSSW_5_3_7/src
+mv CMSSW/ CMSSW_5_3_7/src
+cd CMSSW_5_3_7/src
 cmsenv
-cvs co Configuration/GenProduction
+git checkout powheg-ttbar-genfilter
+addpkg GeneratorInterface/GenFilters
 scram b -j 4
 ```
 
