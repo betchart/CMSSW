@@ -7,8 +7,8 @@ rmdir CMSSW_5_3_7/src
 mv CMSSW/ CMSSW_5_3_7/src
 cd CMSSW_5_3_7/src
 cmsenv
-git checkout powheg-ttbar-genfilter
 addpkg GeneratorInterface/GenFilters
+git checkout powheg-ttbar-genfilter
 scram b -j 4
 ```
 
